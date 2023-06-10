@@ -1,0 +1,712 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 .lbody \{\par
+  background: rgb(131, 58, 180);\par
+  background: linear-gradient(\par
+    45deg,\par
+    rgb(58, 94, 180) 0%,\par
+    rgb(29, 230, 253) 50%,\par
+    rgb(69, 252, 186) 100%\par
+  );\par
+  background-color: #315396;\par
+  min-height: 100vh;\par
+  display: flex;\par
+  flex-direction: row;\par
+  font-size: calc(10px + 2vmin);\par
+  color: white;\par
+\}\par
+\par
+.image \{\par
+  float: left;\par
+  height: 90%;\par
+  pointer-events: none;\par
+  width: 100%;\par
+\}\par
+\par
+.container \{\par
+  float: left;\par
+  width: 40%;\par
+  height: 90%;\par
+  margin-top: 50px;\par
+  margin-left: 160px;\par
+\}\par
+\par
+.bcontainer \{\par
+  margin: 100px auto;\par
+  position: relative;\par
+  width: 400px;\par
+  border-radius: 5px;\par
+  overflow: hidden;\par
+  padding: 5px;\par
+  box-shadow: 0 5px 25px -10px black;\par
+  background: #fff;\par
+  height: 400px;\par
+\}\par
+\par
+.input \{\par
+  border-radius: 5px;\par
+  height: 50px;\par
+  line-height: normal;\par
+  color: #282828;\par
+  display: block;\par
+  width: 80%;\par
+  box-sizing: border-box;\par
+  user-select: auto;\par
+  font-size: 16px;\par
+  padding: 0 6px;\par
+  padding-left: 12px;\par
+  border: 3px solid #5551ff;\par
+  margin-left: 10%;\par
+\}\par
+\par
+.button \{\par
+  margin-left: 40%;\par
+  margin-top: 5px;\par
+  align-items: center;\par
+  appearance: none;\par
+  background-image: radial-gradient(\par
+    100% 100% at 100% 0,\par
+    #5adaff 0,\par
+    #5468ff 100%\par
+  );\par
+  border: 0;\par
+  border-radius: 6px;\par
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,\par
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;\par
+  box-sizing: border-box;\par
+  color: #fff;\par
+  cursor: pointer;\par
+  display: inline-flex;\par
+  font-family: "JetBrains Mono", monospace;\par
+  height: 48px;\par
+  justify-content: center;\par
+  line-height: 1;\par
+  list-style: none;\par
+  overflow: hidden;\par
+  padding-left: 16px;\par
+  padding-right: 16px;\par
+  position: relative;\par
+  text-align: left;\par
+  text-decoration: none;\par
+  transition: box-shadow 0.15s, transform 0.15s;\par
+  user-select: none;\par
+  -webkit-user-select: none;\par
+  touch-action: manipulation;\par
+  white-space: nowrap;\par
+  will-change: box-shadow, transform;\par
+  font-size: 18px;\par
+\}\par
+\par
+.button:focus \{\par
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,\par
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;\par
+\}\par
+\par
+.button:hover \{\par
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,\par
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;\par
+  transform: translateY(-2px);\par
+\}\par
+\par
+.button:active \{\par
+  box-shadow: #3c4fe0 0 3px 7px inset;\par
+  transform: translateY(2px);\par
+\}\par
+\par
+.button-r \{\par
+  margin-left: 27%;\par
+  margin-top: 10px;\par
+  padding: 15px 30px;\par
+  text-align: center;\par
+  text-transform: uppercase;\par
+  transition: 0.5s;\par
+  background-size: 200% auto;\par
+  color: white;\par
+  border-radius: 10px;\par
+  display: block;\par
+  border: 0px;\par
+  font-weight: 700;\par
+  box-shadow: 0px 0px 14px -7px #f09819;\par
+  background-image: linear-gradient(\par
+    45deg,\par
+    #ff512f 0%,\par
+    #f09819 51%,\par
+    #ff512f 100%\par
+  );\par
+  cursor: pointer;\par
+  user-select: none;\par
+  -webkit-user-select: none;\par
+  touch-action: manipulation;\par
+\}\par
+\par
+.button-r:hover \{\par
+  background-position: right center;\par
+  /* change the direction of the change here */\par
+  color: #fff;\par
+  text-decoration: none;\par
+\}\par
+\par
+.button-r:active \{\par
+  transform: scale(0.95);\par
+\}\par
+\par
+.a \{\par
+  margin-left: 30%;\par
+\}\par
+\par
+.body \{\par
+  background: rgb(131, 58, 180);\par
+  background: linear-gradient(\par
+    45deg,\par
+    rgb(58, 94, 180) 0%,\par
+    rgb(29, 230, 253) 50%,\par
+    rgb(69, 252, 186) 100%\par
+  );\par
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans,\par
+    Ubuntu, Fira Sans, Helvetica Neue, sans-serif;\par
+  margin: 0;\par
+  min-height: 100vh;\par
+  display: flex;\par
+  flex-direction: column;\par
+\}\par
+body \{\par
+  background: rgb(131, 58, 180);\par
+  background: linear-gradient(\par
+    45deg,\par
+    rgba(206, 177, 161, 0.596) 0%,\par
+    rgb(50, 224, 224) 50%,\par
+    rgba(122, 209, 88, 0.603) 100%\par
+  );\par
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans,\par
+    Ubuntu, Fira Sans, Helvetica Neue, sans-serif;\par
+  margin: 0;\par
+  min-height: 100vh;\par
+  display: flex;\par
+  flex-direction: column;\par
+\}\par
+\par
+.ha-screen-reader \{\par
+  width: var(--ha-screen-reader-width, 1px);\par
+  height: var(--ha-screen-reader-height, 1px);\par
+  padding: var(--ha-screen-reader-padding, 0);\par
+  border: var(--ha-screen-reader-border, none);\par
+\par
+  position: var(--ha-screen-reader-position, absolute);\par
+  clip: var(--ha-screen-reader-clip, rect(1px, 1px, 1px, 1px));\par
+  overflow: var(--ha-screen-reader-overflow, hidden);\par
+\}\par
+\par
+/*\par
+=====\par
+RESET STYLES\par
+=====\par
+*/\par
+\par
+.field__input \{\par
+  --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, #767676);\par
+\par
+  background-color: transparent;\par
+  border-radius: 0;\par
+  border: none;\par
+\par
+  -webkit-appearance: none;\par
+  -moz-appearance: none;\par
+\par
+  font-family: inherit;\par
+  font-size: inherit;\par
+\}\par
+\par
+.field__input:focus::-webkit-input-placeholder \{\par
+  color: var(--uiFieldPlaceholderColor);\par
+\}\par
+\par
+.field__input:focus::-moz-placeholder \{\par
+  color: var(--uiFieldPlaceholderColor);\par
+\}\par
+\par
+/*\par
+=====\par
+CORE STYLES\par
+=====\par
+*/\par
+\par
+.field \{\par
+  --uiFieldBorderWidth: var(--fieldBorderWidth, 2px);\par
+  --uiFieldPaddingRight: var(--fieldPaddingRight, 1rem);\par
+  --uiFieldPaddingLeft: var(--fieldPaddingLeft, 1rem);\par
+  --uiFieldBorderColorActive: var(\par
+    --fieldBorderColorActive,\par
+    rgba(22, 22, 22, 1)\par
+  );\par
+\par
+  display: var(--fieldDisplay, inline-flex);\par
+  position: relative;\par
+  font-size: var(--fieldFontSize, 1rem);\par
+\}\par
+\par
+.field__input \{\par
+  box-sizing: border-box;\par
+  width: var(--fieldWidth, 100%);\par
+  height: var(--fieldHeight, 3rem);\par
+  padding: var(--fieldPaddingTop, 1.25rem) var(--uiFieldPaddingRight)\par
+    var(--fieldPaddingBottom, 0.5rem) var(--uiFieldPaddingLeft);\par
+  border-bottom: var(--uiFieldBorderWidth) solid\par
+    var(--fieldBorderColor, rgba(0, 0, 0, 0.25));\par
+\}\par
+\par
+.field__input:focus \{\par
+  outline: none;\par
+\}\par
+\par
+.field__input::-webkit-input-placeholder \{\par
+  opacity: 0;\par
+  transition: opacity 0.2s ease-out;\par
+\}\par
+\par
+.field__input::-moz-placeholder \{\par
+  opacity: 0;\par
+  transition: opacity 0.2s ease-out;\par
+\}\par
+\par
+.field__input:focus::-webkit-input-placeholder \{\par
+  opacity: 1;\par
+  transition-delay: 0.2s;\par
+\}\par
+\par
+.field__input:focus::-moz-placeholder \{\par
+  opacity: 1;\par
+  transition-delay: 0.2s;\par
+\}\par
+\par
+.field__label-wrap \{\par
+  box-sizing: border-box;\par
+  pointer-events: none;\par
+  cursor: text;\par
+\par
+  position: absolute;\par
+  top: 0;\par
+  right: 0;\par
+  bottom: 0;\par
+  left: 0;\par
+\}\par
+\par
+.field__label-wrap::after \{\par
+  content: "";\par
+  box-sizing: border-box;\par
+  width: 100%;\par
+  height: 0;\par
+  opacity: 0;\par
+\par
+  position: absolute;\par
+  bottom: 0;\par
+  left: 0;\par
+\}\par
+\par
+.field__input:focus ~ .field__label-wrap::after \{\par
+  opacity: 1;\par
+\}\par
+\par
+.field__label \{\par
+  position: absolute;\par
+  left: var(--uiFieldPaddingLeft);\par
+  top: calc(50% - 0.5em);\par
+\par
+  line-height: 1;\par
+  font-size: var(--fieldHintFontSize, inherit);\par
+\par
+  transition: top 0.2s cubic-bezier(0.9, -0.15, 0.1, 1.15),\par
+    opacity 0.2s ease-out, font-size 0.2s ease-out;\par
+\}\par
+\par
+.field__input:focus ~ .field__label-wrap .field__label,\par
+.field__input:not(:placeholder-shown) ~ .field__label-wrap .field__label \{\par
+  --fieldHintFontSize: var(--fieldHintFontSizeFocused, 0.75rem);\par
+\par
+  top: var(--fieldHintTopHover, 0.25rem);\par
+\}\par
+\par
+/*\par
+//effects\par
+*/\par
+\par
+.field_v3 .field__label-wrap::after \{\par
+  border: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColorActive);\par
+  transition: height 0.2s ease-out, opacity 0.2s ease-out;\par
+\}\par
+\par
+.field_v3 .field__input:focus ~ .field__label-wrap::after \{\par
+  height: 100%;\par
+\}\par
+\par
+.field \{\par
+  --fieldBorderColor: #d1c4e9;\par
+  --fieldBorderColorActive: #673ab7;\par
+\}\par
+\par
+.page \{\par
+  box-sizing: border-box;\par
+  width: 100%;\par
+  max-width: 480px;\par
+  margin: auto;\par
+  padding: 1rem;\par
+  display: grid;\par
+  grid-gap: 30px;\par
+  box-shadow: 0 5px 25px -10px black;\par
+  background: white;\par
+  border-radius: 15px;\par
+  margin-bottom: 0px;\par
+\}\par
+\par
+.bbutton \{\par
+  align-items: center;\par
+  appearance: none;\par
+  border-radius: 4px;\par
+  border-style: none;\par
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 1px -2px, rgba(0, 0, 0, 0.14) 0 2px 2px 0,\par
+    rgba(0, 0, 0, 0.12) 0 1px 5px 0;\par
+  box-sizing: border-box;\par
+  color: #fff;\par
+  cursor: pointer;\par
+  display: inline-flex;\par
+  font-family: Roboto, sans-serif;\par
+  font-size: 0.875rem;\par
+  font-weight: 500;\par
+  height: 36px;\par
+  justify-content: center;\par
+  letter-spacing: 0.0892857em;\par
+  line-height: normal;\par
+  min-width: 64px;\par
+  outline: none;\par
+  overflow: visible;\par
+  padding: 0 16px;\par
+  position: relative;\par
+  text-align: center;\par
+  margin: auto;\par
+  margin-top: 30px;\par
+  text-decoration: none;\par
+  text-transform: uppercase;\par
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);\par
+  user-select: none;\par
+  -webkit-user-select: none;\par
+  touch-action: manipulation;\par
+  vertical-align: middle;\par
+  will-change: transform, opacity;\par
+\}\par
+\par
+.bbutton:hover \{\par
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px -1px, rgba(0, 0, 0, 0.14) 0 4px 5px 0,\par
+    rgba(0, 0, 0, 0.12) 0 1px 10px 0;\par
+\}\par
+\par
+.bbutton:disabled \{\par
+  background-color: rgba(0, 0, 0, 0.12);\par
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 0, rgba(0, 0, 0, 0.14) 0 0 0 0,\par
+    rgba(0, 0, 0, 0.12) 0 0 0 0;\par
+  color: rgba(0, 0, 0, 0.37);\par
+  cursor: default;\par
+  pointer-events: none;\par
+\}\par
+\par
+.bbutton:not(:disabled) \{\par
+  background-color: #6200ee;\par
+\}\par
+\par
+.bbutton:focus \{\par
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px -1px, rgba(0, 0, 0, 0.14) 0 4px 5px 0,\par
+    rgba(0, 0, 0, 0.12) 0 1px 10px 0;\par
+\}\par
+\par
+.bbutton:active \{\par
+  box-shadow: rgba(0, 0, 0, 0.2) 0 5px 5px -3px,\par
+    rgba(0, 0, 0, 0.14) 0 8px 10px 1px, rgba(0, 0, 0, 0.12) 0 3px 14px 2px;\par
+  background: #a46bf5;\par
+\}\par
+\par
+.backbutton \{\par
+  margin-top: 5px;\par
+  margin-left: 5px;\par
+  align-items: center;\par
+  appearance: none;\par
+  background-color: #fcfcfd;\par
+  border-radius: 4px;\par
+  border-width: 0;\par
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,\par
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;\par
+  box-sizing: border-box;\par
+  color: #36395a;\par
+  cursor: pointer;\par
+  display: inline-flex;\par
+  font-family: "JetBrains Mono", monospace;\par
+  height: 48px;\par
+  justify-content: center;\par
+  line-height: 1;\par
+  list-style: none;\par
+  overflow: hidden;\par
+  padding-left: 16px;\par
+  padding-right: 16px;\par
+  position: relative;\par
+  text-align: left;\par
+  text-decoration: none;\par
+  transition: box-shadow 0.15s, transform 0.15s;\par
+  user-select: none;\par
+  -webkit-user-select: none;\par
+  touch-action: manipulation;\par
+  white-space: nowrap;\par
+  will-change: box-shadow, transform;\par
+  font-size: 18px;\par
+\}\par
+\par
+.backbutton:focus \{\par
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,\par
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;\par
+\}\par
+\par
+.backbutton:hover \{\par
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,\par
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;\par
+  transform: translateY(-2px);\par
+\}\par
+\par
+.backbutton:active \{\par
+  box-shadow: #d6d6e7 0 3px 7px inset;\par
+  transform: translateY(2px);\par
+\}\par
+\par
+.dropDownProfile \{\par
+  position: absolute;\par
+  top: 7.5rem;\par
+  right: 3.7rem;\par
+  width: 80px;\par
+  padding: 15px;\par
+  border-radius: 15px;\par
+  background-color: white;\par
+  border: 1px solid gray;\par
+  align-items: center;\par
+  justify-content: center;\par
+  text-align: center;\par
+\}\par
+\par
+.dropDownProfile::before \{\par
+  content: "";\par
+  position: absolute;\par
+  top: -0.7rem;\par
+  right: 2.6rem;\par
+  width: 20px;\par
+  height: 20px;\par
+  transform: rotate(45deg);\par
+  background-color: white;\par
+  border-left: 1px solid grey;\par
+  border-top: 1px solid gray;\par
+\}\par
+\par
+.pbutton \{\par
+  border-color: white;\par
+  background-color: white;\par
+  border: white;\par
+\}\par
+\par
+\par
+.nbutton \{\par
+  border-color: white;\par
+  background-color: white;\par
+  border: white;\par
+\}\par
+\par
+\par
+\par
+.nbutton:hover \{\par
+  background-color: skyblue;\par
+\}\par
+\par
+.PImages \{\par
+  height: 25px;\par
+  width: 25px;\par
+  margin-right: 5px;\par
+  margin-top: 3px;\par
+\}\par
+\par
+.PImages:hover \{\par
+  background-color: skyblue;\par
+\}\par
+\par
+\par
+.NImages \{\par
+  height: 25px;\par
+  width: 25px;\par
+  margin-right: 5px;\par
+  margin-top: 3px;\par
+\}\par
+\par
+.NImages:hover \{\par
+  background-color: skyblue;\par
+\}\par
+\par
+.lImages \{\par
+  height: 20px;\par
+  width: 20px;\par
+  margin-right: 5px;\par
+  margin-top: 5px;\par
+\}\par
+\par
+.ProfileIcon \{\par
+  height: 52px;\par
+  width: 50px;\par
+  position: absolute;\par
+  top: 1.5rem;\par
+  right: 4.5rem;\par
+  padding: 5px;\par
+  border-radius: 50px;\par
+  align-items: center;\par
+  justify-content: center;\par
+  text-align: center;\par
+  border: 1px solid black;\par
+\}\par
+.NotifIcon \{\par
+  height: 52px;\par
+  width: 50px;\par
+  position: absolute;\par
+  top: 1.5rem;\par
+  right: 4.5rem;\par
+  padding: 5px;\par
+  border-radius: 50px;\par
+  align-items: center;\par
+  justify-content: center;\par
+  text-align: center;\par
+  border: 1px solid black;\par
+\}\par
+\par
+.Usert \{\par
+  height: 50px;\par
+  width: 50px;\par
+  position: absolute;\par
+  top: 3.2rem;\par
+  right: 4.5rem;\par
+  padding: 15px;\par
+  border-radius: 15px;\par
+  align-items: center;\par
+  justify-content: center;\par
+  text-align: center;\par
+\}\par
+\par
+.ProfileIcon:hover \{\par
+  opacity: 0.5;\par
+\}\par
+\par
+\par
+\par
+.Uh \{\par
+  background: white;\par
+  height: 40%;\par
+  width: 16.5%;\par
+  position: absolute;\par
+  right: 0.5rem;\par
+  top: 0.5rem;\par
+  background: rgb(131, 58, 180);\par
+  background: linear-gradient(\par
+    45deg,\par
+    rgb(255, 255, 255) 0%,\par
+    rgb(255, 255, 255) 50%,\par
+    rgb(255, 255, 255) 100%\par
+  );\par
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans,\par
+    Ubuntu, Fira Sans, Helvetica Neue, sans-serif;\par
+  margin: 0;\par
+  min-height: 40vh;\par
+  display: flex;\par
+  flex-direction: column;\par
+\}\par
+\par
+.ha \{\par
+  background: white;\par
+  height: 40%;\par
+  width: 16.5%;\par
+  position: absolute;\par
+  right: 0.5rem;\par
+  top: 0.5rem;\par
+  background: rgb(131, 58, 180);\par
+  background: linear-gradient(\par
+    45deg,\par
+    rgb(255, 255, 255) 0%,\par
+    rgb(255, 255, 255) 50%,\par
+    rgb(255, 255, 255) 100%\par
+  );\par
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans,\par
+    Ubuntu, Fira Sans, Helvetica Neue, sans-serif;\par
+  margin: 5;\par
+  min-height: 40vh;\par
+  display: flex;\par
+  flex-direction: row;\par
+\}\par
+\par
+.Uh2 \{\par
+  background: white;\par
+  height: 40%;\par
+  width: 16.5%;\par
+  position: absolute;\par
+  right: 0.5rem;\par
+  top: 16.5rem;\par
+  background: rgb(131, 58, 180);\par
+  background: linear-gradient(\par
+    45deg,\par
+    rgb(255, 255, 255) 0%,\par
+    rgb(255, 255, 255) 50%,\par
+    rgb(255, 255, 255) 100%\par
+  );\par
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans,\par
+    Ubuntu, Fira Sans, Helvetica Neue, sans-serif;\par
+  margin: 0;\par
+  min-height: 55vh;\par
+  display: flex;\par
+  flex-direction: column;\par
+\}\par
+\par
+.HIdesign \{\par
+  margin-top: 60px;\par
+  margin-left: 100px;\par
+\}\par
+.HIdesign2 \{\par
+  margin-top: 0px;\par
+  height: 80px;\par
+  width: 80px;\par
+  position: absolute;\par
+\}\par
+\par
+.nbutton \{\par
+  background: navajowhite;\par
+  border: 1px solid brown;\par
+\}\par
+\par
+.aimg \{\par
+  margin-top: 20px;\par
+  height: 100px;\par
+  width: 100px;\par
+  border-radius: 10px;\par
+\}\par
+\par
+.marg \{\par
+  margin-top: 5px;\par
+\}\par
+\par
+.dive \{\par
+  background-color: navajowhite;\par
+  margin-top: 20px;\par
+  height: 300px;\par
+  width: 400px;\par
+  border-radius: 10px;\par
+  margin: auto;\par
+\}\par
+\par
+.texts \{\par
+  position: absolute;\par
+  margin-top: 0px;\par
+  margin-left: 5px;\par
+\}\par
+\par
+.post \{\par
+  margin-top: 28px;\par
+  height: 150px;\par
+  width: 350px;\par
+  border: 1px solid black;\par
+\}\par
+}
+ 

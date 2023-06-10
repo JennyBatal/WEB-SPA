@@ -1,0 +1,271 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 import React, \{ useEffect, useState \} from "react";\par
+import "./App.css";\par
+import whale1 from "./whale-8.png";\par
+import whale2 from "./whale2.png";\par
+import userImage from "./user.png";\par
+import logoutImage from "./log-out.png";\par
+import Homedesign from "./Homedesign.jpg";\par
+import whalee from "./whale4.png";\par
+import whale3 from "./whale3.jpg";\par
+import axios from "axios";\par
+\par
+axios.defaults.xsrfCookieName = "csrftoken";\par
+axios.defaults.xsrfHeaderName = "X-CSRFToken";\par
+axios.defaults.withCredentials = true;\par
+\par
+const client = axios.create(\{\par
+  baseURL: "{{\field{\*\fldinst{HYPERLINK http://localhost:8000/api }}{\fldrslt{http://localhost:8000/api\ul0\cf0}}}}\f0\fs22 "\par
+\});\par
+\par
+function App() \{\par
+  const [login, loginState] = useState();\par
+  const [register, clickRegister] = useState(false);\par
+  const [firstname, setFirstName] = useState("My");\par
+  const [lastname, setLastName] = useState("Profile");\par
+  const [email, setEmail] = useState("");\par
+  const [password, setPassword] = useState("");\par
+  const [openProfile, setOpenProfile] = useState(false);\par
+  const [profile, setProfile] = useState(false);\par
+  const [comment, setComment] = useState("");\par
+\par
+  useEffect(() => \{\par
+    client\par
+      .get("user")\par
+      .then(function (res) \{\par
+        loginState(true);\par
+      \})\par
+      .catch(function (error) \{\par
+        loginState(false);\par
+      \});\par
+  \}, []);\par
+\par
+  function update_page() \{\par
+    if (register) \{\par
+      clickRegister(false);\par
+    \} else \{\par
+      clickRegister(true);\par
+    \}\par
+  \}\par
+\par
+  function submitRegistration(e) \{\par
+    e.preventDefault();\par
+    client\par
+      .post("register", \{\par
+        first_name: firstname,\par
+        last_name: lastname,\par
+        email: email,\par
+        password: password\par
+      \})\par
+      .then(function (res) \{\par
+        clickRegister(false);\par
+      \});\par
+  \}\par
+\par
+  function submitLogin(e) \{\par
+    e.preventDefault();\par
+    client\par
+      .post("login", \{\par
+        email: email,\par
+        password: password\par
+      \})\par
+      .then(function (res) \{\par
+        loginState(true);\par
+      \});\par
+  \}\par
+\par
+  function clickLogout(e) \{\par
+    e.preventDefault();\par
+    client.post("logout", \{ withCredentials: true \}).then(function (res) \{\par
+      loginState(false);\par
+    \});\par
+    setOpenProfile(false);\par
+    setProfile(false);\par
+  \}\par
+\par
+  function commentSection() \{\par
+    document.getElementById("c").innerHTML = comment;\par
+  \}\par
+\par
+  if (login) \{\par
+    return (\par
+      <div>\par
+        <div className="Uh">\par
+          <img\par
+            src=\{userImage\}\par
+            className="ProfileIcon"\par
+            onClick=\{() => setOpenProfile((p) => !p)\}\par
+          />\par
+          <h3 className="Usert">You</h3>\par
+\par
+          \{openProfile && (\par
+            <div className="flex flex-col dropDownProfile">\par
+              <button onClick=\{() => setProfile((p) => !p)\} className="pbutton">\par
+                <img className="PImages" src=\{userImage\} />\par
+                Profile\par
+              </button>\par
+              <button onClick=\{clickLogout\} className="pbutton">\par
+                <img className="lImages" src=\{logoutImage\} />\par
+                Logout\par
+              </button>\par
+            </div>\par
+          )\}\par
+        </div>\par
+        <div className="Uh2"></div>\par
+        \{profile ? (\par
+          <div className="H">\par
+            <img className="aimg" src=\{whalee\} />\par
+            <h1 className="marg">\{firstname + " " + lastname\}</h1>\par
+            <div className="dive">\par
+              <p>Recent Post</p>\par
+              <h4 className="texts">My Title</h4>\par
+              <img className="post" src=\{whale3\} />\par
+              <p id="c"></p>\par
+              <div>\par
+                <input\par
+                  onChange=\{(e) => setComment(e.target.value)\}\par
+                  placeholder="Comment"\par
+                />\par
+                <button onClick=\{commentSection\}>post</button>\par
+              </div>\par
+            </div>\par
+            <button className="nbutton" onClick=\{() => setProfile((p) => !p)\}>\par
+              Back to home\par
+            </button>\par
+          </div>\par
+        ) : (\par
+          <div className="H">\par
+            <img className="HIdesign" src=\{Homedesign\} />\par
+          </div>\par
+        )\}\par
+      </div>\par
+    );\par
+  \}\par
+  return (\par
+    <div>\par
+      \{register ? (\par
+        <div className="body">\par
+          <div>\par
+            <button className="backbutton" onClick=\{update_page\}>\par
+              Back To Login\par
+            </button>\par
+          </div>\par
+          <div className="page">\par
+            <div className="field field_v3">\par
+              <label htmlFor="first-name" className="ha-screen-reader">\par
+                First name\par
+              </label>\par
+              <input\par
+                id="first-name"\par
+                className="field__input"\par
+                placeholder="  "\par
+                onChange=\{(e) => setFirstName(e.target.value)\}\par
+              />\par
+              <span className="field__label-wrap" aria-hidden="true">\par
+                <span className="field__label">First name</span>\par
+              </span>\par
+            </div>\par
+            <div className="field field_v3">\par
+              <label htmlFor="last-name" className="ha-screen-reader">\par
+                Last name\par
+              </label>\par
+              <input\par
+                id="last-name"\par
+                className="field__input"\par
+                placeholder="  "\par
+                onChange=\{(e) => setLastName(e.target.value)\}\par
+              />\par
+              <span className="field__label-wrap" aria-hidden="true">\par
+                <span className="field__label">Last name</span>\par
+              </span>\par
+            </div>\par
+            <div className="field field_v3">\par
+              <label htmlFor="email" className="ha-screen-reader">\par
+                E-mail\par
+              </label>\par
+              <input\par
+                id="email"\par
+                className="field__input"\par
+                placeholder="  "\par
+                onChange=\{(e) => setEmail(e.target.value)\}\par
+              />\par
+              <span className="field__label-wrap" aria-hidden="true">\par
+                <span className="field__label">E-mail</span>\par
+              </span>\par
+            </div>\par
+            <div className="field field_v3">\par
+              <label htmlFor="password" className="ha-screen-reader">\par
+                Password\par
+              </label>\par
+              <input\par
+                type="password"\par
+                id="password"\par
+                className="field__input"\par
+                placeholder="  "\par
+                onChange=\{(e) => setPassword(e.target.value)\}\par
+              />\par
+              <span className="field__label-wrap" aria-hidden="true">\par
+                <span className="field__label">Password</span>\par
+              </span>\par
+            </div>\par
+          </div>\par
+          <div style=\{\{ margin: "auto", marginTop: 10 \}\}>\par
+            <button\par
+              className="bbutton"\par
+              role="button"\par
+              onClick=\{submitRegistration\}\par
+            >\par
+              Submit\par
+            </button>\par
+          </div>\par
+        </div>\par
+      ) : (\par
+        <div className="lbody">\par
+          <div className="container">\par
+            <img className="image" src=\{whale1\} />\par
+          </div>\par
+          <div className="bcontainer">\par
+            <img\par
+              style=\{\{ height: "30%", width: "35%", marginLeft: "29%" \}\}\par
+              className="image"\par
+              src=\{whale2\}\par
+            />\par
+            <div>\par
+              <input\par
+                type="email"\par
+                placeholder="Email"\par
+                className="input"\par
+                onChange=\{(e) => setEmail(e.target.value)\}\par
+              />\par
+            </div>\par
+            <div>\par
+              <input\par
+                style=\{\{ marginTop: 20 \}\}\par
+                type="password"\par
+                placeholder="Password"\par
+                className="input"\par
+                onChange=\{(e) => setPassword(e.target.value)\}\par
+              />\par
+            </div>\par
+            <div>\par
+              <button className="button" onClick=\{submitLogin\}>\par
+                Login\par
+              </button>\par
+            </div>\par
+            <div>\par
+              <button className="button-r" onClick=\{update_page\}>\par
+                Create Account\par
+              </button>\par
+            </div>\par
+          </div>\par
+        </div>\par
+      )\}\par
+    </div>\par
+  );\par
+\}\par
+\par
+export default App;\par
+}
+ 

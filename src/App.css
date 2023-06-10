@@ -1,0 +1,428 @@
+.ProfileIcon {
+  height: 40px;
+  width: 38px;
+  position: absolute;
+  top: 2.5rem;
+  right: 6.5rem;
+  padding: 5px;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+}
+
+
+.NotifIcon {
+  height: 60px;
+  width: 59px;
+  position: absolute;
+  top: 1.8rem;
+  right: 9.9rem;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+.dropDownNotif {
+  position: absolute;
+  top: 3rem;
+  right: 10rem;
+  width: 80px;
+  background-color: white;
+  border: 1px solid gray;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.PenIcon {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 2.3rem;
+  right: 13.4rem;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.MenuIcon {
+  height: 50px;
+  width: 49px;
+  position: absolute;
+  top: 2.3rem;
+  right: 80rem;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+.dropDownMenu {
+  position: absolute;
+  top: 3rem;
+  left: 5rem;
+  width: 80px;
+  background-color: white;
+  border: 1px solid gray;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.WhaleIcon {
+  height: 80px;
+  width: 79px;
+  position: absolute;
+  top: 1.9rem;
+  right: 70rem;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.label1 {
+  position: absolute;
+  top: 2.5rem;
+  right: 53rem;
+  
+}
+
+.searchArea {
+  position: absolute;
+  top: 3rem;
+  right: 17rem;
+  min-height: 2.5rem;
+  min-width: 35rem;
+  
+  
+}
+
+.label2 {
+  position: absolute;
+  top:10rem;
+  right: 75rem;
+  
+}
+
+.PopularIcon {
+  height: 160px;
+  width: 159px;
+  position: absolute;
+  top: 13rem;
+  right: 73rem;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+.label3 {
+  position: absolute;
+  top: 22.5rem;
+  right: 76.4rem;
+  
+}
+.label4 {
+  position: absolute;
+  top: 6rem;
+  right: 55rem;
+  
+}
+.TrendingIcon1 {
+  height: 100px;
+  width: 99px;
+  position: absolute;
+  top: 11rem;
+  right: 56.5rem;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+}
+.TrendingIcon2 {
+  height: 100px;
+  width: 99px;
+  position: absolute;
+  top: 11rem;
+  right: 49.5rem;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+}
+.TrendingIcon3 {
+  height: 100px;
+  width: 99px;
+  position: absolute;
+  top: 11rem;
+  right: 42.5rem;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+}
+.TrendingIcon4 {
+  height: 100px;
+  width: 99px;
+  position: absolute;
+  top: 11rem;
+  right: 35.5rem;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+}
+.TrendingIcon5 {
+  height: 100px;
+  width: 99px;
+  position: absolute;
+  top: 11rem;
+  right: 28.5rem;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+}
+.label5 {
+  position: absolute;
+  top: 17rem;
+  right: 46rem;
+  
+}
+.RecentIcon1 {
+  height: 100px;
+  width: 99px;
+  position: absolute;
+  top: 32.5rem;
+  right: 56.5rem;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+}
+.RecentIcon2 {
+  height: 100px;
+  width: 99px;
+  position: absolute;
+  top: 32.5rem;
+  right: 49.5rem;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+}
+.RecentIcon3 {
+  height: 100px;
+  width: 99px;
+  position: absolute;
+  top: 32.5rem;
+  right: 42.5rem;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+}
+.RecentIcon4 {
+  height: 100px;
+  width: 99px;
+  position: absolute;
+  top: 32.5rem;
+  right: 35.5rem;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+}
+.RecentIcon5 {
+  height: 100px;
+  width: 99px;
+  position: absolute;
+  top: 32.5rem;
+  right: 28.5rem;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+}
+.label6 {
+  position: absolute;
+  top: 28rem;
+  right: 57rem;
+  
+}
+.WesternIcon {
+  height: 100px;
+  width: 99px;
+  position: absolute;
+  top: 22rem;
+  right: 56.5rem;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+}
+.AsianIcon {
+  height: 100px;
+  width: 99px;
+  position: absolute;
+  top: 22rem;
+  right: 49.5rem;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+}
+.ComedyIcon {
+  height: 100px;
+  width: 99px;
+  position: absolute;
+  top: 22rem;
+  right: 42.5rem;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+}
+.SciFiIcon {
+  height: 100px;
+  width: 99px;
+  position: absolute;
+  top: 22rem;
+  right: 35.5rem;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+}
+.AnimIcon {
+  height: 100px;
+  width: 99px;
+  position: absolute;
+  top: 22rem;
+  right: 28.5rem;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.label7 {
+  position: absolute;
+  top: 27rem;
+  right: 57rem;
+  
+}
+.label8 {
+  position: absolute;
+  top: 27rem;
+  right: 51rem;
+  
+}
+.label9 {
+  position: absolute;
+  top: 27rem;
+  right: 43.5rem;
+  
+}
+.label10 {
+  position: absolute;
+  top: 27rem;
+  right: 37.5rem;
+  
+}
+.label11 {
+  position: absolute;
+  top: 27rem;
+  right: 28.6rem;
+  
+}
+
+.NextIcon {
+  height: 45px;
+  width: 40px;
+  position: absolute;
+  top: 13rem;
+  right: 10rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+.PrevIcon {
+  height: 45px;
+  width: 40px;
+  position: absolute;
+  top: 13rem;
+  right: 14rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+.NextIconExpl {
+  height: 45px;
+  width: 40px;
+  position: absolute;
+  top: 24rem;
+  right: 10rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+.PrevIconExpl {
+  height: 45px;
+  width: 40px;
+  position: absolute;
+  top: 24rem;
+  right: 14rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+.NextIconRec {
+  height: 45px;
+  width: 40px;
+  position: absolute;
+  top: 35rem;
+  right: 10rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+.PrevIconRec {
+  height: 45px;
+  width: 40px;
+  position: absolute;
+  top: 35rem;
+  right: 14rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
